@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gantari&family=Smooch&display=swap');
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, red);
+    border-radius: 6px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gantari', sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+
+.nav {
+    width: 90%;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 50px;
+    position: absolute;
+    display: flex;
+    margin-top: -690px;
+}
+
+.nav p a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav p a span {
+    background-color: red;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+.carousel {
+    position: absolute;
+    margin-top: -55px;
+    background: #191919;
+}
+
+.carousel-caption.d-none.d-md-block p {
+    margin-bottom: 0rem;
+}
+
+.carousel-caption.d-none.d-md-block h5 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.authors a {
+    color: red;
+    text-decoration: none;
+}
+
+.authors a:hover {
+    color: red;
+}
+
+.authors span {
+    color: white;
+}
+
+.aboutamish {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    padding-top: 60px;
+    background-color: #101010;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutamish img {
+    height: 400px;
+    width: auto;
+}
+
+.aboutamish .about p {
+    width: 900px;
+}
+
+.aboutamish .about button a {
+    text-decoration: none;
+    color: white;
+}
+
+.aboutamish .about button {
+    position: relative;
+    display: inline-flex;
+    padding: 15px 25px;
+    background-color: #191919;
+    color: white;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 0px ;
+}
+
+.aboutamish .about button span{
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aboutamish .about button::before{
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: red;
+    transition: width 0.6s, height 0.6s;
+}
+
+.aboutamish .about button:hover::before{
+    width: 300px;
+    height: 300px;
+}
+
+.aboutamish h1 {
+    padding-top: 30px;
+}
+
+.aboutamish h1 span {
+    color: red;
+    font-size: 60px;
+}
+
+.shivtri {
+    background-color: black;
+}
+
+#carouselExampleControls{
+    margin-top: 10px;
+    background-color: black;
+}
+
+.shivtri .title {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 60px;
+    background-image: url(titlebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shivtri .title img {
+    height: 40px;
+    margin: 0px 40px;
+    filter:contrast(0%);
+}
+
+.shivtri .title img:last-child {
+    transform: scaleX(-1);
+}
+
+.shiv {
+    display: flex;
+}
+
+.shiv .content {
+    width: 40%;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 90px;
+    position: absolute;
+}
+
+.shiv .content h1 {
+    font-size: 50px;
+}
+
+.shiv .content span {
+    font-size: 30px;
+    color: red;
+}
+
+.shiv .content p {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.shiv .content button a {
+    text-decoration: none;
+    color: white;
+}
+
+.shiv .content button {
+    position: relative;
+    display: inline-flex;
+    padding: 15px 25px;
+    background-color: #191919;
+    color: white;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 0px ;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.shiv .content button span{
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.shiv .content button::before{
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: red;
+    transition: width 0.6s, height 0.6s;
+}
+
+.shiv .content button:hover::before{
+    width: 300px;
+    height: 300px;
+}
+
+.shiv .video {
+    width: 75%;
+    height: auto;
+    margin-left: 25%;
+}
+
+.rel {
+    padding: 20px;
+    padding-top: 60px;
+    background-color: #191919;
+}
+
+.rel .heading {
+    text-align: center;
+}
+
+.rel .heading h1 {
+    font-size: 60px;
+}
+
+.books {
+    padding: 50px;
+    background-color: #191919;
+    display: flex;
+    justify-content: space-around;
+}
+
+.books .card {
+    border: 0px;
+    border-radius: 20px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.books .card img {
+    border-radius: 20px;
+}
+
+.books .card-body {
+    background-color: #101010;
+    border-radius: 20px;
+    margin-top: -20px;
+    text-align: center;
+    width: 270px;
+}
+
+.books .card-body h5 {
+    font-size: 25px;
+}
+
+.books .card-body:hover {
+    transition: .4s;
+    margin-top: -25px;
+    width: 270px;
+    transform: scale(1.1);
+}
+
+.books .card-body a {
+    background-color: red;
+    border: 0px;
+}
+
+.books .card-body a:hover {
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.435);
+}
+
+.ramtri {
+    background-color: black;
+    margin-top: -40px;
+}
+
+.ramtri .title {
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+    background-image: url(titlebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ramtri .title img {
+    height: 100px;
+    margin: 0px 30px;
+}
+
+.ramtri .title img:last-child {
+    transform: scaleX(-1);
+}
+
+.ram {
+    display: flex;
+}
+
+.ram .content {
+    width: 40%;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 90px;
+    position: absolute;
+}
+
+.ram .content h1 {
+    font-size: 50px;
+}
+
+.ram .content span {
+    font-size: 30px;
+    color: red;
+}
+
+.ram .content p {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.ram .content button a {
+    text-decoration: none;
+    color: white;
+}
+
+.ram .content button {
+    position: relative;
+    display: inline-flex;
+    padding: 15px 25px;
+    background-color: #191919;
+    color: white;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 0px ;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.ram .content button span{
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.ram .content button::before{
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: red;
+    transition: width 0.6s, height 0.6s;
+}
+
+.ram .content button:hover::before{
+    width: 300px;
+    height: 300px;
+}
+
+.ram .video {
+    width: 75%;
+    height: auto;
+    margin-left: 25%;
+}
+
+.getpdf{
+    background-color: #191919;
+    padding-bottom: 40px;
+}
+
+.getpdf .title{
+    background-color: #191919;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.getpdf .title h1{
+    font-size: 60px;
+}
+
+.getpdf .cardmain{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+.getpdf .card{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    transition: 0.5s;
+    background-color: #191919;
+    border: 0px;
+}
+
+.getpdf .card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.getpdf .card .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    clip-path: circle(130px at center);
+    transition: .5s;
+}
+
+.getpdf .card:hover .circle::before{
+    background: #101010;
+    clip-path: circle(400px at center);
+}
+
+.getpdf .card img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 300px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.card:hover img{
+    left: 84%;
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 40px 20px 20px 40px;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content h2{
+    color: red;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.card .content .langbtn{
+    display: flex;
+}
+
+.card .content a{
+    position: relative;
+    color: white;
+    padding:10px 15px;
+    border-radius: 20px;
+    background: red;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 2px soild transparent;
+}
+
+.card .content a:hover{
+    background: white;
+    color: red;
+    font-weight: bold;
+}
+
+.getpdf .loadbtn p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.getpdf .loadbtn p a{
+    background-color: red;
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.getpdf .loadbtn p a:hover{
+    background-color: white;
+    color: red;
+}
+
+.foot {
+    background-image: url(footbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.foot .whole {
+    padding: 10px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot .image img {
+    height: auto;
+    width: 300px;
+}
+
+.foot .image p {
+    font-size: 25px;
+}
+
+.foot .image p a {
+    text-decoration: none;
+    color: white;
+}
+
+.cont {
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.whole .cont ul {
+    list-style-type: none;
+}
+
+.whole .cont ul li{
+    width: fit-content;
+    text-align: center;
+    font-size: 20px;
+    padding:15px 0px;
+}
+
+.whole .cont ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.whole .cont ul li a:hover{
+    color: red;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.whole .cont ul li:hover{
+    color: red;
+    font-weight: bold;
+}
+
+.whole .soc{
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.whole .soc span{
+    font-size: 20px;
+}
+
+.whole .soc a{
+    margin-right: -35px;
+}
+
+.whole .soc a img{
+    height: auto;
+    width: 80px;
+    padding-top: 10px;
+}
+
+.whole .soc a img:hover{
+    transition: .5s;
+    transform: scale(1.3);
+}
