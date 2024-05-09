@@ -1,5 +1,6 @@
 # Overview of the Website
 It is a book surfer website specially dedicated to a author Amish Tripathi, which provied free pdfs of the books available and a catchy interface for the readers that encourages them to read/order the book.
+**Live Project Link** : <a href="https://amishverse.netlify.app/"> Click Here !</a>
 
 ## Technologies Used
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>&nbsp;
